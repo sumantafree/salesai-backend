@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-jose[cryptography]
+bcrypt
+PyJWT
+python-dotenv
+requests
+beautifulsoup4
+openai
