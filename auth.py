@@ -2,7 +2,10 @@ import jwt
 import bcrypt
 from datetime import datetime, timedelta
 
-SECRET_KEY = "sales-assistant-secret-key-2024"
+SECRET_KEY = os.getenv(
+    "JWT_SECRET",
+    "sales-assistant-secret-key-2024"   # fallback for local development
+)
 ALGORITHM = "HS256"
 TOKEN_EXPIRE_HOURS = 24 * 7  # 7 days
 
